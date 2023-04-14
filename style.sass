@@ -1,0 +1,123 @@
+$fondo: #f3f5fc
+$ColorAzul: #0a3871
+$Gris: #d8dfe8
+$GrisOscuro: #7b8187
+$NegroClaro: #343a40
+$NegroPClaro: #495057
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    background-color: $fondo    
+    font-family: 'Inter', Arial, Helvetica, sans-serif
+
+header
+    display: flex
+    align-items: center
+    margin: 20px
+    margin-left: 40px
+    img
+        width: 50px
+    h1
+        margin-left: 20px
+        font-size: 20px
+        color: $ColorAzul
+
+.main
+    max-width: 1400px
+    width: 100%
+    height: 600px
+    display: flex
+    flex-direction: row
+    margin: 0 auto
+
+    .Cizquierdo
+        width: 70%
+        .ContenedorSuperior
+            width: 100%
+            height: 70%            
+        textarea
+            width: 100%
+            height: 100%
+            padding: 10px
+            color: $ColorAzul
+            font-size: 23px
+            border: none
+            outline: none   
+            resize: none            
+
+        .ContenedorInferior
+            width: 100%
+            height: 30%
+            margin-top: 10px            
+            display: flex
+            flex-direction: column
+            justify-content: center                                    
+            align-items: center
+
+            .advertencias                
+                display: flex
+                align-items: center
+                width: 100%
+                height: 20%
+                margin-left: 250px
+            img
+                width: 25px
+            h2
+                margin-left: 5px
+                font-size: 16px
+                color: $GrisOscuro
+            .contBotones                                
+                height: 80%
+                .btn
+                    width: 370px
+                    height: 67px
+                    border-radius: 20px
+                    border: 1px solid $ColorAzul
+                    font-size: 18px
+                .encriptar
+                    background-color: $ColorAzul
+                    color: #fff
+                    &:hover
+                        background-color: #fff
+                        color: $ColorAzul
+                        border: 3px solid
+                .desencriptar
+                    background-color: $Gris
+                    color: $ColorAzul                    
+                    &:hover
+                        background-color: #fff                        
+                        border: 3px solid
+
+    .Cderecho
+        background-color: #fff
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        padding: 20px
+        border-radius: 25px
+        width: 25%
+        img
+            width: 90%  
+        h2
+            color: $NegroClaro
+            background-color: #fff
+            margin-bottom: 5px
+        h3                  
+            color: $NegroPClaro
+            background-color: #fff
+            font-size: 15px
+
+footer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
+    color: $ColorAzul
+    font-size: 15px
+    h2
+        margin-bottom: 5px

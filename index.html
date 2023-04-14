@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Encriptador</title>
+    </head>
+    <body>
+
+        <header>
+            <img src="img/Logo.png" alt="Logo">
+            <h1>Encriptador</h1>
+        </header>
+
+        <div class="main">
+
+            <div class="Cizquierdo">
+                <div class="ContenedorSuperior">
+                    <textarea name="textoA" id="textoA" cols="30" rows="10" onclick="vaciarText()">Ingrese su texto</textarea>
+                </div>
+    
+                <div class="ContenedorInferior">
+                    <div class="advertencias">
+                        <img src="img/Adver.png" alt="Adventencia">
+                        <h2>Solo letras minúsculas y sin acento</h2>
+                    </div>
+                    <div class="contBotones">
+                        <input name="btnE" id="btnE" type="button" value="Encriptar" class="btn
+                            encriptar" onclick=encriptar()>
+                        <input name="btnD" id="btnD" type="button" value="Desencriptar" class="btn
+                            desencriptar" onclick="desencriptar()">
+                    </div>
+                </div>            
+            </div>            
+
+            <aside id="CBarra" class="Cderecho">
+                <img src="img/Muñeco.png" alt="Muñeco">            
+                <h2>No se ha encontrado texto</h2>
+                <h3>Ingresa el texto que desea encriptar o desencriptar</h3>
+            </aside>
+        </div>        
+        
+
+        <footer>
+            <h2>Hecho por Miguel Vásquez & Alura Latam</h2>
+            <h2>Challeng One</h2>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
